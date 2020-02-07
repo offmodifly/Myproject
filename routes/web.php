@@ -28,7 +28,7 @@ Route::get('/contact', function () {
         'title'=> $title,
         'content' => $content,
     ]);
-})->name('contact');
+})->name('contact')->middleware('auth');
 
 Route::get('/about', function () {
     $title="About";
@@ -37,7 +37,7 @@ Route::get('/about', function () {
         'title' => $title,
         'content' => $content,
     ]);
-})->name('about');
+})->name('about')s;
 
 Auth::routes();
 
