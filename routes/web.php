@@ -37,7 +37,7 @@ Route::get('/about', function () {
         'title' => $title,
         'content' => $content,
     ]);
-})->name('about')s;
+})->name('about');
 
 Auth::routes();
 
