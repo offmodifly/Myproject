@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::get('/contact', function () {
     $title="Contact";
-    $content="Welcome to My contact";
+    $content="Welcome to My contact    ";
     return view('contact')->with([
         'title'=> $title,
         'content' => $content,
